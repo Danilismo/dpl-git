@@ -1,0 +1,108 @@
+.celda {
+	background-color: green;
+	border: 1px solid;
+	height: 10%;
+    width: 10%;
+    max-width: 60px;
+    min-height: 32px;
+}
+
+#tablero {
+	border-collapse: collapse;
+	margin-left: auto;
+    margin-top: 5px;
+	padding: 0;
+    position: relative;
+    height: 70%;
+    width: 50%;
+}
+
+#mejoresPuntuaciones, #informacion {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+#informacion {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: center;
+}
+
+table, tr, td {
+    z-index: 0;
+}
+
+.seleccionada {
+	border: 2px solid orange;
+}
+
+.pasillo {
+    background-image: url(../imagenes/imagen3.jpg);
+    background-position: -257px -100px;
+    background-repeat: no-repeat;
+}
+
+.lava {
+    background-image: url(../imagenes/imagen1.jpg);
+    background-position: -450px -290px;
+    background-repeat: no-repeat;
+}
+
+.hielo {
+    background-image: url(../imagenes/imagen1.jpg);
+    background-position: -192px -290px;
+    background-repeat: no-repeat;
+}
+
+.muro {
+    background-image: url(../imagenes/imagen3.jpg);
+    background-position: -322px -100px;
+    background-repeat: no-repeat;
+}
+
+.salida {
+    background-image: url(../imagenes/imagen2.png);
+    background-position: -383px 0px;
+    background-repeat: no-repeat;
+}
+
+.inicio {
+    background-image: url(../imagenes/imagen2.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1220px)
+{
+    #tablero 
+    {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    #tablero 
+    {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 736px)
+{
+    #tablero 
+    {
+        height: 120%;
+        width: 100%;
+        margin-left: 20px;
+    }
+}

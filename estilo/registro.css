@@ -1,0 +1,46 @@
+h1 {
+    padding: 10px;
+}
+
+section {
+    margin: auto;
+}
+
+.oculto {
+    display : none;
+}
+
+#errores {
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+body
+{
+    background-color: darkgray;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+#sectionBotones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#sectionBotones a {
+    font-size: 1.5em;
+}

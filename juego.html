@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto Navidades</title>
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="estilo/tablero.css" rel="stylesheet">
+	<link href="estilo/personaje.css" rel="stylesheet">
+	<link href="estilo/estructura.css" rel="stylesheet">
+	<script type="text/javascript" src="codigo/tablero.js"></script>
+	<script type="text/javascript" src="codigo/celda.js"></script>
+	<script type="text/javascript" src="codigo/juego.js"></script>
+	<script type="text/javascript" src="codigo/corredor.js"></script>
+</head>
+<body>
+    <header><h1>DUNGEON ESCAPE</h1></header>
+    <nav id = "usuario">Usuario :</nav>
+    <div id = "cuerpo">
+        <section>
+            <div id = "informacion">
+                <div id = "miPuntuacion">
+                    <h3>Puntuación Actual:</h3>
+                    <div id = "puntuacionActual"></div>
+                </div>
+                <div id = "miPuntuacionMaxima">
+                    <h3>Puntuación Máxima:</h3>
+                    <div id = "puntuacionMaxima"></div>
+                </div>
+                <div id = "nivel">
+                </div>
+                <div id = "botones">
+                    <button onclick = "js:juego = reiniciar(true)">Reiniciar</button>
+                    <button onclick = "js:juego = reiniciar(false, false)">Nuevo Juego</button>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div id = "Records">
+                <table id = "mejoresPuntuaciones">
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Puntuacion</th>
+                    </tr>
+                    <tr id ="u0">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u1">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u2">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u3">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u4">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u5">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u6">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u7">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u8">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id ="u9">
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+	</div>
+	<div id = "victoria">
+	    <h1>Has Ganado!</h1>
+	    <button onclick = "js:juego = reiniciar(true)">Reiniciar</button>
+	    <button onclick = "js:juego = reiniciar(false, true)">Siguiente Nivel</button>
+	</div>
+	<div id = "derrota">
+        <h1>Has Perdido, el corredor ha muerto</h1>
+        <button onclick = "js:juego = reiniciar(true)">Reiniciar</button>
+        <button onclick = "js:juego = reiniciar(false, false)">Nuevo Juego</button>
+	</div>
+	<div id = "juegoCompletado">
+        <h1>Has completado el juego! Ya eres libre!</h1>
+        <button onclick = "js:juego = reiniciar(true)">Reiniciar</button>
+        <button onclick = "js:juego = reiniciar(false, false)">Nuevo Juego</button>
+	</div>
+	<div id = "Cajapersonajes">
+        <h3>Seleccione un personaje: </h3>
+        <div id = "personajes">
+            <div id = "efis"></div>
+            <div id = "chara"></div>
+            <div id = "brure"></div>
+            <div id = "fira"></div>
+        </div>
+	</div>
+</body>
+<script>
+    var juego = nuevoJuego(1, false);
+</script>
+</html>

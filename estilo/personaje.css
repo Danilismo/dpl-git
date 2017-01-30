@@ -1,0 +1,103 @@
+#personaje {
+    z-index: 1;
+    height: 10%;
+    width: 6%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    max-height: 30px;
+    max-width: 28px;
+}
+
+
+.efis {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -37px -128px;
+    background-repeat: no-repeat;
+}
+
+.chara {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -128px -128px;
+    background-repeat: no-repeat;
+}
+
+.brure {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -227px -128px;
+    background-repeat: no-repeat;
+}
+
+.fira {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -324px -128px;
+    background-repeat: no-repeat;
+}
+
+#personajes div {
+    height: 126px;
+    width: 90px;
+    margin : 5px;
+    cursor: pointer;
+}
+
+#efis {
+    background-image: url(../imagenes/personajes.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+#chara {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -103px 0px;
+    background-repeat: no-repeat;
+}
+
+#brure {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -197px 0px;
+    background-repeat: no-repeat;
+}
+
+#fira {
+    background-image: url(../imagenes/personajes.png);
+    background-position: -297px 0px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px)
+{
+    #personaje 
+    {
+        height: 9%;
+        width: 6%;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    #personaje 
+    {
+        width: 9%;
+    }
+}
+
+@media screen and (max-width: 740px)
+{
+    #personaje 
+    {
+        height: 8%;
+        width: 6%;
+        
+    }
+}
+
+@media screen and (max-width: 680px)
+{
+    #personaje 
+    {
+        height: 10%;
+        width: 100%;
+        
+    }
+}
